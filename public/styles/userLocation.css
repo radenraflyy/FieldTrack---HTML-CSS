@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #f0f2f5;
+}
+
+header {
+  padding: 0.4vw;
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.header-container{
+  display: flex;
+}
+
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img{
+  width: 70%;
+}
+
+.header-list ul{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.header-list ul li{
+  display: flex;
+  list-style: none;
+}
+
+
+.header-list ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.header-list li a:hover{
+  border-bottom: 2px solid #734ff3;
+  padding-bottom: 10px;
+  color: #734ff3;
+}
+
+.header-profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  margin-top: 1%;
+}
+
+.header-profile h3{
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+.header-profile img{
+  width: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  padding: 13px;
+}
+
+.filter-container{
+  border: 1px solid  #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.line{
+  border: 0.5px solid #9a9a9a;
+  margin-top: -5px;
+}
+
+.menu-filter ul{
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.menu-filter li {
+  list-style: none;
+}
+
+.menu-filter li a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.menu-filter li a:hover{
+  border-bottom: 2px solid #734ff3;
+  padding-bottom: 10px;
+  color: #734ff3;
+  border-bottom-width: 3px;
+}
+
+.label-kanban label{
+  display: block;
+}
+
+.label-kanban input{
+  margin-top: 12px;
+  width: 38.7vw;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.label-kanban button{
+  display: flex;
+  justify-content: center;
+}
+
+.filter-kanban{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+button{
+  margin-top: 34px;
+  width: 100%;
+  height: 34px;
+  background-color: #734ff3;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+}
+
+.container-user{
+  margin-top: 17px;
+}
+
+.flex-user{
+  display: grid;
+  grid-template-columns: 0.5fr 0.6fr 1fr;
+  gap: 20px;
+}
+
+.user-data{
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.flex-user1{
+  display: grid;
+  grid-template-columns: 1.1fr 0.97fr;
+  gap: 20px;
+}
+
+.user-data1{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.user-data h4{
+  font-weight: 500;
+  margin: 0;
+  padding: 20px;
+}
+
+.user-data1 h4{
+  font-weight: 500;
+  margin: 0;
+  padding: 20px;
+}
+
+.content-user{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.content-user img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.content-user p{
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .header-logo img{
+    width: 40vw;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  .header-profile{
+    display: none;
+  }
+  
+  .filter-kanban{
+    display: block;
+  }
+
+  .label-kanban input{
+    width: 94%;
+  }
+
+  .label-kanban:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  button{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .flex-user,
+  .flex-user1{
+    display: block;
+  }
+
+  .user-data{
+    margin-top: 20px;
+  }
+}

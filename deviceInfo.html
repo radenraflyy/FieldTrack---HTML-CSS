@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FieldTrack - Dashboard</title>
+  <link rel="stylesheet" href="./public/styles/deviceInfo.css">
+</head>
+<body>
+  <!-- Header Start -->
+  <header>
+    <div class="header-container">
+    <div class="header-logo">
+      <img src="./public/images/fieldtrack.png" alt="logo-fieldtrack">
+    </div>
+    <div class="header-list">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="deviceInfo.html">Device Info</a></li>
+      </ul>
+    </div>
+    <div class="header-profile">
+      <h3>Superadmin@gmail.com</h3>
+      <img src="./public/images/userImg.png" alt="">
+    </div>
+  </div>
+  </header>
+  <!-- Header End -->
+
+  <div class="container">
+  <!-- Filter Start -->
+    <div class="filter-container">
+      <div class="menu-filter">
+        <ul>
+          <li><a href="deviceInfo.html">Device Status</a></li>
+          <li><a href="userLocation.html">User Location</a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="filter-kanban">
+        <div class="label-kanban">
+          <label>Region</label>
+          <input type="Text" placeholder="All"></input>
+        </div>
+          <button>Filter</button>
+      </div>
+    </div>
+  <!-- Filter End -->
+
+  <!-- Maps Start -->
+    <div class="container-maps">
+      <div class="maps-ly">
+        <img src="./public/images/GoogleMapTA.png" alt="" srcset="">
+        <div class="legend-maps">
+          <div class="markerRed"></div>
+          <h3 style="border: 3px dashed red;">Total GPS Of 3</h3>
+          <div class="makerGreen"></div>
+          <h3>Total GPS On 5</h3>
+          <button>Detail</button>
+        </div>
+        <div class="zoom-min">
+          <div class="zoom-maps">
+            <h3>+</h3>
+            <h3 style="margin-left: 10px;">-</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Maps End -->
+
+  </div>
